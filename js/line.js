@@ -68,7 +68,7 @@ $(document).ready(function(){
       }
       // Position the car at "pos" totated by "angle"
       var  car = document.getElementById("c");
-      car.setAttribute("transform", "translate(" + (pos.x) + "," + (1 * pos.y) + ") rotate(" + (rad2deg(angle)) + ")");
+      car.setAttribute("transform", "translate(" + (pos.x) + "," + (2 * pos.y) + ") rotate(" + (rad2deg(angle)) + ")");
     }
   
     function rad2deg(rad) {
