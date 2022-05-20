@@ -46,7 +46,7 @@ $(document).ready(function(){
       var pathLength = line.getTotalLength(),
       maxScrollTop = $(document).height() - $(window).height(),
       percentDone = $(window).scrollTop() / maxScrollTop,
-      length = 2 * percentDone * pathLength;
+      length = percentDone * pathLength;
       line.style.strokeDasharray = [ length,pathLength].join(' ');
     }
   
