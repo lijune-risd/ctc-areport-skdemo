@@ -58,14 +58,14 @@ th.tag2 {
 .rectangle.left {
   display: inline-block;
   height: 50px;
-  width: calc(100vw *0.1);
+  width: calc(100vw *0.15);
   margin-right: auto;
   animation: ball 4s ease 1s;
 }
 .rectangle.right {
   display: inline-block;
   height: 50px;
-  width: 100px;
+  width: calc(100vw *0.15);
   margin-left: 2px;
   animation: ball 4s ease 1s;
 
