@@ -56,7 +56,7 @@ $(document).ready(function(){
       var  path = document.getElementById("path");
       // Calculate distance along the path the car should be for the current scroll amount
       var  pathLen = path.getTotalLength();
-      var  dist = 2 * pathLen * scrollY / maxScrollY;
+      var  dist = pathLen * scrollY / maxScrollY;
       var  pos = path.getPointAtLength(dist);
       // Calculate position a little ahead of the car (or behind if we are at the end), so we can calculate car angle
       if (dist + 1 <= pathLen) {
