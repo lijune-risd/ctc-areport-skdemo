@@ -1,0 +1,323 @@
+
+@font-face {
+    font-family: 'Lyon Text';
+    src: url('../fonts/LyonText-Regular.woff2') format('woff2'),
+        url('../fonts/LyonText-Regular.woff') format('woff');
+    font-weight: normal; font-style: normal;
+    font-display: swap;
+}
+
+body, html, #Stage {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+    background-color:  #FFBF01;
+	/* overflow: hidden; */
+    overscroll-behavior: none;
+	-ms-content-zooming: none;
+    -ms-touch-action: pan-y;
+    cursor: url('/assets/svg/cursor.svg'),auto;	
+
+}
+
+textarea {
+    resize: none;
+}
+
+html {
+    overflow-x: hidden;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+#Stage, #Stage * {
+	position: absolute;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: none;
+}
+
+#wrapper {
+  padding: 2em;
+}
+
+nav {
+    width: 100%;
+    display: inline-flex;
+    background-color: transparent;
+}
+
+.nav_links {
+  list-style: none;
+  /* Removes bullets */
+}
+
+.nav_links li {
+  /* targets nav links and each item */
+  display: inline-block;
+  /* puts all the nav links side by side */
+  padding: 0px 20px;
+}
+
+.header {
+	display: flex;
+  align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem;
+    background-color:  #FFBF01;
+
+}
+
+.menu {
+    width: 100%;
+    height: 20px;
+    align-items: left;
+    transition: all 0.3s ease;
+}
+/*
+body:not(.firefox) #Stage, body:not(.firefox) #Stage * {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+}
+
+body:not(.firefox) #Stage * input,  body:not(.firefox) #Stage * textarea {
+    user-select: none;
+	-moz-user-select: auto;
+	-webkit-user-select: auto;
+	-o-user-select: auto;
+	-ms-user-select: auto;
+	-webkit-tap-highlight-color: auto;
+}*/
+
+#Stage br, #Stage span, #Stage a {
+	position: relative;
+}
+
+#Stage p {
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+*:focus:not(.focus-visible) {
+    outline-width: 0;
+}
+
+textarea::-webkit-input-placeholder { color: inherit; }
+textarea:-moz-placeholder { color: inherit; }
+textarea::-moz-placeholder { color: inherit; }
+textarea:-ms-input-placeholder { color: inherit;}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+.line-anchor {
+	display: block;
+	border-color: #6980fe transparent transparent transparent;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.Container a {
+    text-decoration: none;
+}
+
+.Container a:not(.logo):after {
+    content: '';
+    position: absolute;
+    text-decoration: none;
+
+    width: 100%;
+    height: 1px;
+    background-color: #008AFF;
+    left: 0;
+    bottom: 2px;
+}
+
+body:not(.firefox) .is-mobile, body:not(.firefox) .is-desktop {
+    display: none;
+}
+body.firefox .is-mobile, body.firefox .is-desktop {
+    visibility: hidden;
+}
+
+a {
+    transition: 0.2s all;
+    color: white;
+}
+
+.link, #Stage a[href^="http"] {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 2px!important;
+    box-shadow: inset 0 -1px 0 0 #008AFF;
+    color: inherit;
+}
+
+.btn-link {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 2px!important;
+    box-shadow: inset 0 -3px 0 0 #008AFF;
+    color: inherit;
+    transition: color .3s, box-shader .3s;
+}
+
+#Stage a[href^="http"]:after {
+    content: none;
+}
+
+.is-desktop .btn-link:hover, .is-desktop .link:hover,  .is-desktop #Stage a[href^="http"]:hover {
+    color: #008AFF!important;
+    box-shadow: inset 0 -1px 0 0 transparent;
+}
+
+.rwd-isMobile .is-mobile {
+    display: block!important;
+    visibility: visible!important;
+}
+.rwd-isDesktop .is-desktop {
+    display: block!important;
+    visibility: visible!important;
+}
+
+.desktop .spacer {
+    background: none!important;
+}
+
+.phone .spacer {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+  a {
+	color: white;
+    font-family: Roboto;
+	background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #5a80cc 50%);
+	background-position: -0% 0;
+	background-size: 200% auto;
+	text-decoration: none;
+	transition: background-position 0.5s ease-out;
+   
+  }
+  
+  a:hover {
+	color: white;
+	background-position: -100% 0;
+  }
+  
+
+  text.body15 {
+    font-family: Roboto;
+
+  }
+
+  @keyframes translate-text {
+      from {
+          transform: translateX(500px);
+      }
+      to {
+          transform: translate(-500px);
+      }
+  }
+
+  @keyframes translate-text-alt {
+    from {
+        transform: translateX(-500px);
+    }
+    to {
+        transform: translate(500px);
+    }
+}
+
+  .animated-text {
+
+    animation: translate-text linear 10s infinite alternate;
+  }
+
+  .animated-text:hover {
+    color:red;
+    font-size: 20px;
+    transition: 5s;
+    transform: scale(2, 3);
+  }
+
+  .animated-text-alt {
+    animation: translate-text-alt linear 10s infinite alternate;
+  }
+
+  .bar {
+    background-color: #FFBF01;
+  }
+
+
+  .bar-title .a:hover {
+color: blue;
+  }
+
+  #first-bar.bar:hover {
+      background-color:#947823;
+      color:white;
+      transition:2s;
+
+    }
+
+    #secondbar.bar:hover{
+        font-size:150%;
+        background-color:#947823;
+        transition:2s;
+        color: red;
+    }
+
+    #third-bar.bar .a .bar-title:active {
+        background-color:#947823;
+        color:white;
+        transition:2s;
+        z-index:2000;
+        background-position: 0% 0;
+
+    }

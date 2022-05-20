@@ -1,0 +1,200 @@
+table, th, td {
+}
+
+table {
+  display: inline-block;
+  width:auto;
+  color: grey;
+
+}
+.tag {
+  color: grey;
+}
+td.tag {
+  padding-right: calc(100vw*0.325);
+  width: 500px;
+}
+td.tag2-2 {
+  padding-right: calc(100vw*0.15);
+  width: 500px;
+}
+
+th.tag2 {
+  padding-right: calc(100vw*0.05);
+  width: 500px;
+}
+
+.row-container {
+  margin-top: calc(100vh*0.02);
+}
+.text-row-container {
+  display: inline-block;
+  padding-right: 20%;
+}
+
+.text-row-container {
+  display: inline-block;
+  width:10%;
+}
+
+.box-container {
+  padding-left:150px;
+  display:inline-block;
+  width:40%;
+  margin-right:0;
+}
+
+.box-row {
+  display: inline-block;
+  margin-right:0;
+}
+
+.box-row.container {
+  justify-content: space-between;
+  right: auto;
+  margin-right:0;
+
+}
+.rectangle.left {
+  display: inline-block;
+  height: 50px;
+  width: calc(100vw *0.1);
+  margin-right: auto;
+  animation: ball 4s ease 1s;
+}
+.rectangle.right {
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  margin-left: 2px;
+  animation: ball 4s ease 1s;
+
+/*background-color: #555;*/
+}
+
+.explanation {
+  color:black;
+  font-weight: 600;
+  padding:calc(100vh*0.02);
+  background-color: #C4C4C4;
+  margin-top:calc(100vh*0.025);
+}
+
+.ellipse {
+  display: inline-block;
+  align-items: right;
+  margin-right: auto;
+  justify-content: flex-end;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: #555;
+
+}
+
+
+.candidate-container {
+  padding-top:calc(100vh*0.05);
+  height: calc(200vh - 175px);
+  margin-left: 15%;
+}
+
+.red-25 {
+  background-color: #D5383825;
+}
+.red-50 {
+  background-color: #D5383850;
+}
+.red-75 {
+  background-color: #D5383875;
+}
+.red-100 {
+  background-color: #D53838;
+}
+
+.blue-25 {
+  background: #14519C25;
+}
+.blue-50 {
+  background: #14519C50;
+}
+.blue-75 {
+  background: #14519C75;
+}
+.blue-100 {
+  background: #14519C;
+}
+
+.diagram-caption {
+  font-size: 10px;
+}
+
+.filler-rect {
+  height: 500px;
+  width: 500px;
+  background-color: #555;
+  margin-top: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10%;
+
+}
+
+@keyframes ball {
+  0%{
+    transform: scaleX(0%);
+  }
+  100% {
+    transform: scaleX(300px);
+  }
+}
+
+@keyframes kickout {
+  0%{
+    transform: scaleX(0%);
+  }
+  100% {
+    transform: scaleX(300px);
+  }
+}
+
+#easing p {
+  margin: 8px 0;
+}
+#easing span {
+  display: block;
+  padding-left: 0;
+  width: 50px;
+  height: 30px;
+  background-color: #ff9900;
+}
+#easing span.e1 {
+  animation: ball 4s ease 1s infinite alternate both;
+}
+#easing span.e2 {
+  animation: ball 4s linear 1s infinite alternate both;
+}
+#easing span.e3 {
+  animation: ball 4s ease-in 1s infinite alternate both;
+}
+#easing span.e4 {
+  animation: ball 4s ease-out 1s infinite alternate both;
+}
+#easing span.e5 {
+  animation: ball 4s ease-in-out 1s infinite alternate both;
+}
+
+
+.text-red {
+  color:red;
+}
+
+.text-highlight {
+  background-color:grey;
+}
+
+
+.text-blue {
+  color:blue;
+}

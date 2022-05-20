@@ -1,0 +1,305 @@
+/*Organized CSS for Finals */
+
+html{
+    cursor:text;
+}
+
+header {
+    background-color:  #FFBF01; 
+    text-align:center;
+    height:5%; 
+    text-align: center; 
+    box-shadow: 2px 2px 5px grey;
+}
+
+nav {
+    text-align:center;
+}
+
+/*IMG ID*/
+
+#logo {
+    width: 5px; padding-right: 10px;
+		pointer-events: all; z-index: 800;
+}
+
+/*Container*/
+
+#backgrounds {
+    background-color: transparent; width: 100%;
+}
+
+.ProblemView {
+    position: relative;
+	padding: 0px; 
+    height: 100vh;
+
+}
+
+
+/*
+.wrapper {
+    display: flex; 
+    position: relative;
+	width: calc(100vw - 160px);
+    height: 100vh; 
+    margin-bottom: 5%;
+}*/
+
+
+.half {
+    display: block; width: 50%; height: 100vh
+
+}
+
+/*Landing Containers*/
+
+.bar-title {
+    color: white; 
+    font-family: Roboto; 
+    text-align: left; 
+    z-index:-2000; 
+    font-size: 100px;
+}
+
+.text-house.reveal {
+    margin: -25%;
+}
+
+.container {
+    opacity:0.4; 
+    background-color:white; 
+    border: solid white 1px; 
+    height: 12px; 
+    width: 100vw;
+}
+
+p.text-bar-p {
+    color:black;
+    font-size: 14px; 
+    z-index: 1000;
+}
+
+
+/*First Explanation Container*/
+
+.img-container-first {
+    flex:1;
+    width: 500px;
+}
+.speechBubble.content.sub1.sub3 {
+    flex:2;
+    display: flex; 
+    justify-content: center;
+	margin-bottom: 70px; 
+    flex: 4; 
+    position: relative; 
+    font-family: Roboto; 
+    font-size: 18px;
+	line-height: 140%; 
+    font-style: normal; 
+    font-weight: normal; 
+    color: rgb(0, 0, 0);
+    bottom: auto; 
+    height:auto;
+	transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+    width: 200px;
+
+}
+
+#first-exp-move {
+    top: 0;
+}
+
+#first-text-explanation {
+   width: calc(100vw - 1000px);
+   top:-10%;
+}
+
+.text-wrapper {
+    right:0;
+    width: calc(100vw - 200px);
+}
+
+
+.block {
+    width: 235.083px; 
+    display: flex; 
+    position: relative;
+	justify-content: center; 
+    flex-direction: column; 
+    margin-bottom: 0px; 
+    margin-left: 33.5833px; 
+    margin-right:500px;
+}
+
+
+/*Second Container*/
+
+.index.label-XS.reveal {
+    position: relative; opacity: 1;
+	transform: translate3d(0px, 0px, 0px); 
+    font-family: Roboto; 
+	font-size: 13px; 
+    line-height: 120%; 
+    font-style: normal; 
+    font-weight: normal;
+	color: rgb(158, 158, 158); 
+    text-align: left; 
+    display: flex; 
+    flex-wrap: nowrap;
+	align-items: center; 
+    margin-bottom: 19px; 
+    cursor:e-resize;
+}
+
+/*Third Container*/
+
+#third-description.ProblemView {
+    background-color: #333333;
+}
+
+
+/* Fourth Container*/
+
+.speechBubble.blockWrapper {
+    position: relative; 
+    width: 300px;
+	margin-left: 50%; 
+    display: inline-block; 
+    padding-bottom: 26px; 
+}
+
+.subtitle.sub2.reveal {
+    opacity: 1; display: inline-block;
+	position: relative;
+	font-family: Roboto; font-size: 26px; line-height: 140%; font-style: normal;
+	font-weight: normal; color: rgb(0, 0, 0); width: 100%; 
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.text.body17.reveal {
+    position: relative; padding-top: 20%; font-family: Roboto;
+			font-size: 17px; line-height: 175%; font-style: normal; font-weight: normal;
+			letter-spacing: -0.02em; color: rgb(75, 75, 75); margin-left: 42.875px; 
+}
+
+/*Fifth Container */
+
+.scroll {
+    position: relative; 
+    width: 100%;
+	height:50vh;  
+    margin-top: 40px;
+}
+
+.text.body15 {
+    position: relative; 
+    max-width: 400px;
+    font-family: Roboto;
+	font-size: 15px; 
+    line-height: 175%; 
+    font-style: normal;
+	font-weight: normal; 
+    letter-spacing: -0.02em; 
+    color: rgb(75, 75, 75);
+	width: 341.25px; 
+    transform: translate3d(0px, 0px, 0px);
+	opacity: 1;
+}
+
+
+
+/*Titles*/
+
+.title.h5.reveal {
+    opacity: 1; 
+    position: relative; 
+    font-family: Roboto; 
+    font-size: 20px;
+	line-height: 135%; 
+    font-style: normal; 
+    font-weight: 500; 
+    color: white;
+	transform: translate3d(0px, 0px, 0px); 
+    text-align: center;
+}
+
+.text.body15 {
+    flex:1;opacity: 1; 
+    transform: translate3d(0px, 0px, 0px);
+	position: relative; 
+    font-family: Roboto; 
+    font-size: 15px; 
+    line-height: 175%;
+	font-style: normal; 
+    font-weight: normal; 
+    letter-spacing: -0.02em; 
+    color: rgb(75, 75, 75);
+	margin-top: 16px; 
+    width: calc(100vw - 900px);
+}
+
+.title.h3.reveal {
+    position: relative; 
+    font-family:  Roboto; 
+    font-size: 44px;
+	line-height: 130%; 
+    font-style: normal; 
+    font-weight: normal; 
+    color: rgb(255, 255, 255);
+	width: 612.75px; 
+    margin-left: 68.0833px; 
+    margin-top: 20px;
+}
+
+.title.h4 {
+    position: relative; 
+    font-family: Roboto;
+	font-size: 36px; 
+    line-height: 130%; 
+    font-style: normal;
+	font-weight: 500; 
+    color: rgb(0, 0, 0); 
+    letter-spacing: -0.01em;
+	margin-bottom: 23px; 
+    width: 341.25px; 
+    transform: translate3d(0px, 0px, 0px);
+	opacity: 1;
+}
+
+.subtitle15 {
+    position: relative;
+	font-size: 15px; 
+    line-height: 175%; 
+    font-style: normal; 
+    font-weight: 900; 
+    letter-spacing: -0.02em; 
+    font-family: Roboto;
+	color: rgb(0, 0, 0); 
+    margin-bottom: 32px; 
+    width: 341.25px;
+	text-transform: uppercase; 
+    transform: translate3d(0px, 0px, 0px);
+	opacity: 1;
+}
+
+
+/*Interactive*/
+.opportunity {
+    position: absolute;
+	left: 60%;
+    width: 30%;
+    top: 50%;
+	border: 1px solid #FFBF01; 
+    padding: 40px;
+	transform: translate3d(0px, -50%, 0px); 
+    opacity: 1;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid #FFBF01; 
+
+}

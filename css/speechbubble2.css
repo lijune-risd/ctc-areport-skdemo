@@ -1,0 +1,82 @@
+.speechBubble {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10em;
+    color: grey;
+    background-color: white;
+    padding: 1.125em 1.5em;
+    font-size: 1em;
+}
+.speechBubble::before {
+    content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 1em solid white;
+  border-right: 0.5em solid transparent;
+  border-top: 0.1em solid white;
+  border-bottom: 20px solid transparent;
+  left: 32px;
+  bottom:-1em;
+
+}
+
+
+
+
+.reverseSpeechBubble {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 10em;
+  color: white;
+  background-color: grey;
+  padding: 3em 3em;
+  font-size: 1em;
+}
+.reverseSpeechBubble::before {
+  content: "";
+width: 0px;
+height: 0px;
+position: absolute;
+border-left: 1em solid grey;
+border-right: 0.5em solid transparent;
+border-top: 0.1em solid grey;
+border-bottom: 20px solid transparent;
+left: 32px;
+bottom:-1em;
+transform: scaleX(-1);
+}
+
+
+
+.titleSpeechBubble {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 2em;
+  color: white;
+  background-color:#333333 ;
+  padding: 1em 1em;
+  font-size: 1em;
+  margin-right: 33%;
+  justify-self: center;
+  margin-bottom: 2em;
+}
+.titleSpeechBubble::before {
+  content: "";
+width: 0px;
+height: 0px;
+position: absolute;
+border-left: 1em solid #333333 ;
+border-right: 0.5em solid transparent;
+border-top: 0.1em solid #333333 ;
+border-bottom: 20px solid transparent;
+left: 32px;
+bottom:-0.5em;
+transform: scaleX(-1);
+}
+
+.scale:hover {
+  transform:scale(2);
+}
+
+

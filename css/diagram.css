@@ -1,0 +1,333 @@
+@media (min-width: 1024px){
+  .css-ui9rw0 {
+      margin: 0 auto;
+      max-width: 1605px;
+    }
+
+  .css-10zpvha {
+      margin-left: calc((100% - 600px) / 2);
+      margin-right: auto;
+      width: 600px;
+    }
+
+    .inner-body {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+html {
+background-color:  #FFBF01; 
+cursor: url('/assets/svg/cursor.svg'), pointer;	
+
+}
+
+body {
+  font-family: Roboto;
+  color:white;
+  margin:0;
+  padding: 0;
+  cursor: url('/assets/svg/cursor.svg'), pointer;	
+
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.g-body,
+.g-caption,
+.g-caption_bold,
+html:not(.story) .interactive-source,
+html:not(.story) .interactive-credit,
+html:not(.story) #interactive-leadin,
+.g-method-text {
+  color: #333333;
+}
+
+.header-container {
+    margin-top: 1.5625rem;
+}
+
+.body-wrapper {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5px;
+  border: 0;
+  background-color:grey;
+  animation: ball 4s ease 1s;
+}
+
+hr .diagram-1 {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 5px;
+  transform-origin: 100% 50%;
+  animation: ball 4s ease 1s;
+}
+
+hr.starter {
+  display: block;
+  margin-top: 5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 5px;
+}
+
+
+html:not(.story) #interactive-heading {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern";
+    -webkit-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern=1";
+    font-size: 38px;
+    line-height: 46px;
+}
+
+.chart-header {
+  padding-top: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 30px;
+  line-height: 24px;
+  padding-bottom: 30px;
+}
+.chart-header a{
+  color: grey;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #5a80cc 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+ 
+}
+
+.chart-header a:hover {
+  color: white;
+  background-position: -100% 0;
+}
+
+.chart-subheader {
+  padding-top: calc(100vh * 0.05);
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.chart-subheader a{
+  color: grey;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #B2B2E1 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+}
+
+.chart-subheader a:hover {
+  color: white;
+  background-position: -100% 0;
+}
+
+p{
+  font-size: 20px;
+    line-height: 30px;
+}
+
+th {
+  width: 100px;
+  text-align:left;
+}
+nav {
+  background-color: transparent;
+  margin: 0;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size:14px;
+  text-align:center;
+  padding-top: 100px;
+}
+
+footer {
+  margin-top: 50px;
+  background-color:transparent;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+}
+
+pre { background-color: #fafafa; }
+.container p { margin-bottom: 1rem }
+.spacer { margin: 3rem 0 0 }
+a.link { border-bottom: 1px dashed rgba(255, 255, 255, .8) }
+
+
+.matter-btn-compare.matter-btn {
+        font-size: 18px;
+        text-align: center;
+        line-height: 32px;
+      }
+
+      .matter-js-compare-build.matter-demo {
+        position: absolute;
+        background: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      .matter-js-compare-build.matter-demo .matter-header-outer {
+        display: none;
+      }
+
+      .matter-js-compare-build.matter-demo canvas {
+        opacity: 0.5;
+        background: transparent !important;
+      }
+
+@keyframes ball {
+  0%{
+    transform: scaleX(0%);
+  }
+  100% {
+    transform: scaleX(300px);
+  }
+}
+
+
+video {
+  width: 500px;
+  height: 500px;
+}
+
+.captions {
+  text-align: center;
+}
+
+.captions a {
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #bac5db 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #222;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.5;
+  transition: background-position 0.5s ease-out;
+}
+.captions a:hover {
+  background-position: -100% 0;
+}
+
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.source-cite {
+  font-size: 10px;
+  text-align: right;
+  opacity: 0.4;
+}
+
+.thoughts {
+  position: relative;
+  left: 10%;
+  margin: auto;
+  padding-bottom: 50px;
+  margin-right: 10%;
+  cursor: help;
+}
+
+
+@keyframes translate-text {
+  from {
+      transform: translateX(1000px);
+  }
+  to {
+      transform: translate(-1000px);
+  }
+}
+
+@keyframes translate-text-alt {
+from {
+    transform: translateX(-1000px);
+}
+to {
+    transform: translate(1000px);
+}
+}
+
+.animated-text {
+
+animation: translate-text linear 10s infinite alternate;
+}
+
+.animated-text:hover {
+color:red;
+font-size: 20px;
+transition: 5s;
+transform: scale(2, 3);
+}
+
+.animated-text-alt {
+animation: translate-text-alt linear 10s infinite alternate;
+}
+
+
+
+.house {
+  width: 90%;
+}
+
+
+.box{
+  position:relative;
+  background-color: transparent;
+  font-size:10px;
+  top:40px;
+  left:40px;
+  display:inline-block;
+  margin:20px;
+  border-radius: 50% ;
+  width:40px;
+  height:40px;
+  color:#FFBF01;
+font-family: Roboto;
+  text-align:center;
+  line-height:20px;

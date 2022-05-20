@@ -1,0 +1,125 @@
+
+.text-house {
+    position:relative;
+    padding-top: 500px;
+}
+#one {
+    width: 70%;
+    opacity: 0.5;
+
+}
+#two {
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 15px;
+    overflow: hidden;
+    color: red;
+}
+#three {
+    width: 100%;
+    opacity: 0.5;
+}
+#four {
+    width: 60%;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 15px;
+    overflow: hidden;
+    color: blue;
+}
+
+#five {
+    width: 10%;
+    font-size: 10px;
+    opacity: 0.5;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+#six {
+    width: 10%;
+    font-size: 10px;
+    opacity: 0.5;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+.center {
+    display: grid;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.text-container {
+    padding: 5px 10px;
+    min-width: 0;
+    font-size: 2rem;
+    color: white;
+    white-space: nowrap;
+    overflow: visible;
+    position: relative;
+    transition-duration: 2s;
+    background-color: #333333;
+}
+
+.text-container:hover {
+    transform:scale(1.5);
+    background-color: #70809050;
+}
+.text-container span {
+    display: inline-block;
+}
+.text-container .animate {
+    position: relative;
+    animation: leftright 3s infinite alternate ease-in-out;
+}
+
+.animate2 {
+    position: relative;
+    animation: rightleft 3s infinite alternate ease-in-out;
+}
+
+@keyframes leftright {
+    0%, 20% {
+        transform: translateX(0%);
+        left: 0%;
+   }
+    80%, 100% {
+        transform: translateX(-100%);
+        left: 100%;
+   }
+}
+
+@keyframes rightleft {
+    0%, 20% {
+        transform: translateX(-75%);
+        left: 0%;
+   }
+    80%, 100% {
+        transform: translateX(75%);
+        left: 100%;
+   }
+}
+.fader {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 25px;
+}
+.fader.fader-left {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+.fader.fader-right {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+@media (max-width: 450px) {
+    .center {
+        width: 100%;
+        padding: 20px;
+   }
+}

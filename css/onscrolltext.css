@@ -1,0 +1,28 @@
+  
+  .header-section {
+    padding-bottom: 50vh;
+  }
+  .shoe {
+    position: relative;
+    padding: 20px;
+  }
+  .piece:not(.outsole) {
+    position: absolute;
+    bottom: 7vw;
+  }
+  .midsole {
+    width: 89%;
+    left: 5%;
+  }
+  .heel {
+    width: 41.8013857%;
+    left: 6%;
+  }
+  .outsole {
+    width: 100%;
+    position: relative;
+  }
+  
+  h1, h2, p, li {
+    max-width: none;
+  }

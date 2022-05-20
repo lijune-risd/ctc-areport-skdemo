@@ -1,0 +1,560 @@
+html {
+scroll-behavior: smooth;
+}
+
+.left-container {
+    left: 0;
+    background-color: #111;
+    flex:1;
+}
+.right-container {
+    flex: 2;
+    position: absolute;
+    right: 0;
+}
+#floating-words .floating-word {
+    width: 50%;
+  position: absolute;
+  transition: 0.1s;
+  background-position: -0% 0;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+  word-break: unset !important;
+  overflow-wrap: unset;
+}
+
+#floating-words .floating-word:hover {
+    position: absolute;
+    transition: 0.1s;
+    word-break: unset !important;
+    overflow-wrap: unset;
+    background-position: -99.99% 0;  
+  }
+
+.floating-word:nth-child(n+1) {
+  opacity: 1;
+  left: 10px;
+  top: 20px;
+  font-size: 23px;
+  -webkit-animation-name: float;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+2) {
+  opacity: 1;
+  left: 220px;
+  top: 200px;
+  font-size: 31px;
+  -webkit-animation-name: float-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+3) {
+  opacity: 0.8;
+  left: 0px;
+  top: 27vh;
+  font-size: 27px;
+  -webkit-animation-name: float-second;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-second;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+4) {
+  opacity: 0.6;
+  left: 30vw;
+  top: 0px;
+  font-size: 20px;
+  -webkit-animation-name: float-second-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-second-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+5) {
+ opacity: 1;
+    left: 13vw;
+    top: 15vh;
+  font-size: 21px;
+  -webkit-animation-name: float;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+6) {
+ opacity: 1;
+left: 30vw;
+    top: 15vh;
+  font-size: 26px;
+  -webkit-animation-name: float-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+7) {
+ opacity: 0.4;
+  left: 10vw;
+    top: 35vh;
+  font-size: 30px;
+  -webkit-animation-name: float-second;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-second;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+8) {
+ opacity: 0.4;
+  left: 23vw;
+    top: 40vh;
+  font-size: 21px;
+  -webkit-animation-name: float-second-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-second-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+9) {
+  opacity: 0.8;
+left: 36vw;
+    top: 31vh;
+  font-size: 31px;
+  -webkit-animation-name: float;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+10) {
+  opacity: 1;
+ left: 4vw;
+    top: 14vh;
+  font-size: 31px;
+  -webkit-animation-name: float-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+11) {
+  opacity: 0.8;
+left: 3vw;
+    top: 49vh;
+  font-size: 25px;
+  -webkit-animation-name: float-second;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-second;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+12) {
+  opacity: 0.8;
+    left: 0px;
+    top: 40vh;
+  font-size: 25px;
+  -webkit-animation-name: float-second-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-second-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+13) {
+   opacity: 0.8;
+  left: 32vw;
+    top: 43vh;
+  font-size: 27px;
+  -webkit-animation-name: float;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.floating-word:nth-child(n+14) {
+  opacity: 0.4;
+  left: 24vw;
+    top: 5vh;
+  font-size: 28px;
+  -webkit-animation-name: float-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@keyframes float {
+    0% {
+    color: #808080;
+  }
+  25% {
+    color: #111d21;
+    transform: scale(0.3) translateY(92px) translateX(10px);
+    opacity: 0.6;
+  }
+  50% {
+    color: #808080;
+    transform: scale(0.7) translateY(120px) translateX(0px);
+    opacity: 0.5;
+  }
+  75% {
+    color: #111d21;
+    transform: scale(0.9) translateY(0px) translateX(75px);
+    opacity: 0.5;
+  }
+  100% {
+    color: #808080;
+  }
+}
+@keyframes float-reversed {
+    0% {
+    color: #808080;
+  }
+  25% {
+    color: #111d21;
+    transform: scale(0.9) translateY(2px) translateX(28px);
+    opacity: 0.5;
+  }
+  50% {
+    color: #808080;
+    transform: scale(0.2) translateY(10px) translateX(50px);
+    opacity: 0.5;
+  }
+  75% {
+    color: #111d21;
+    transform: scale(0.3) translateY(2px) translateX(4px);
+    opacity: 0.6;
+  }
+  100% {
+    color: #808080;
+  }
+}
+  @keyframes float-second {
+    0% {
+    color: #808080;
+  }
+  25% {
+    color: #111d21;
+    transform: scale(0.9) translateY(22px) translateX(50px);
+    opacity: 0.5;
+  }
+  50% {
+    color: #808080;
+    transform: scale(0.2) translateY(90px) translateX(20px);
+    opacity: 0.5;
+  }
+  75% {
+    color: #111d21;
+    transform: scale(0.3) translateY(22px) translateX(24px);
+    opacity: 0.6;
+  }
+  100% {
+    color: #808080;
+  }
+}
+  @keyframes float-second-reversed {
+    0% {
+    color: #111d21;
+  }
+  25% {
+    color: #808080;
+    transform: scale(1.0) translateY(20px) translateX(56px);
+    opacity: 0.5;
+  }
+  50% {
+    color: #111d21;
+    transform: scale(0.5) translateY(100px) translateX(0px);
+    opacity: 0.5;
+  }
+  75% {
+    color: #808080;
+    transform: scale(1.7) translateY(50px) translateX(25px);
+    opacity: 0.6;
+  }
+  100% {
+    color: #808080;
+  }
+}
+
+
+
+
+.right-floating-word:nth-child(n+1) {
+  opacity: 1;
+  right: 10px;
+  top: 20px;
+  font-size: 23px;
+  -webkit-animation-name: right-float;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+2) {
+  opacity: 1;
+  right: 220px;
+  top: 200px;
+  font-size: 31px;
+  -webkit-animation-name: right-float-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+3) {
+  opacity: 0.8;
+  right: 0px;
+  top: 27vh;
+  font-size: 27px;
+  -webkit-animation-name: float-second;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-second;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+4) {
+  opacity: 0.6;
+  right: 30vw;
+  top: 0px;
+  font-size: 20px;
+  -webkit-animation-name: float-second-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-second-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+5) {
+ opacity: 1;
+    right: 13vw;
+    top: 15vh;
+  font-size: 21px;
+  -webkit-animation-name: float;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+6) {
+ opacity: 1;
+right: 30vw;
+    top: 15vh;
+  font-size: 26px;
+  -webkit-animation-name: float-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+7) {
+ opacity: 0.4;
+  right: 10vw;
+    top: 35vh;
+  font-size: 30px;
+  -webkit-animation-name: float-second;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-second;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+8) {
+ opacity: 0.4;
+  right: 23vw;
+    top: 40vh;
+  font-size: 21px;
+  -webkit-animation-name: float-second-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-second-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+9) {
+  opacity: 0.8;
+right: 36vw;
+    top: 31vh;
+  font-size: 31px;
+  -webkit-animation-name: float;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+10) {
+  opacity: 1;
+ right: 4vw;
+    top: 14vh;
+  font-size: 31px;
+  -webkit-animation-name: float-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+11) {
+  opacity: 0.8;
+left: 3vw;
+    top: 49vh;
+  font-size: 25px;
+  -webkit-animation-name: float-second;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-second;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+12) {
+  opacity: 0.8;
+    right: 0px;
+    top: 40vh;
+  font-size: 25px;
+  -webkit-animation-name: float-second-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-second-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+13) {
+   opacity: 0.8;
+  right: 32vw;
+    top: 43vh;
+  font-size: 27px;
+  -webkit-animation-name: float;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.right-floating-word:nth-child(n+14) {
+  opacity: 0.4;
+  left: 24vw;
+    top: 5vh;
+  font-size: 28px;
+  -webkit-animation-name: float-reversed;
+  -webkit-animation-duration: 25.2s;
+  animation-name: float-reversed;
+  animation-duration: 25.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+
+
+@keyframes right-float {
+    0% {
+    color: #808080;
+  }
+  25% {
+    color: #111d21;
+    transform: scale(0.3) translateY(92px) translateX(-10px);
+    opacity: 0.6;
+  }
+  50% {
+    color: #808080;
+    transform: scale(0.7) translateY(120px) translateX(0px);
+    opacity: 0.5;
+  }
+  75% {
+    color: #111d21;
+    transform: scale(0.9) translateY(0px) translateX(75px);
+    opacity: 0.5;
+  }
+  100% {
+    color: #808080;
+  }
+}
+@right-kefloat-reversed {
+    0% {
+    color: #808080;
+  }
+  25% {
+    color: #111d21;
+    transform: scale(0.9) translateY(2px) translateX(-28px);
+    opacity: 0.5;
+  }
+  50% {
+    color: #808080;
+    transform: scale(0.2) translateY(10px) translateX(50px);
+    opacity: 0.5;
+  }
+  75% {
+    color: #111d21;
+    transform: scale(0.3) translateY(2px) translateX(4px);
+    opacity: 0.6;
+  }
+  100% {
+    color: #808080;
+  }
+}
+  @keyframes float-second {
+    0% {
+    color: #808080;
+  }
+  25% {
+    color: #111d21;
+    transform: scale(0.9) translateY(22px) translateX(50px);
+    opacity: 0.5;
+  }
+  50% {
+    color: #808080;
+    transform: scale(0.2) translateY(90px) translateX(20px);
+    opacity: 0.5;
+  }
+  75% {
+    color: #111d21;
+    transform: scale(0.3) translateY(22px) translateX(24px);
+    opacity: 0.6;
+  }
+  100% {
+    color: #808080;
+  }
+}
+  @keyframes float-second-reversed {
+    0% {
+    color: #111d21;
+  }
+  25% {
+    color: #808080;
+    transform: scale(1.0) translateY(20px) translateX(56px);
+    opacity: 0.5;
+  }
+  50% {
+    color: #111d21;
+    transform: scale(0.5) translateY(100px) translateX(0px);
+    opacity: 0.5;
+  }
+  75% {
+    color: #808080;
+    transform: scale(1.7) translateY(50px) translateX(25px);
+    opacity: 0.6;
+  }
+  100% {
+    color: #808080;
+  }
+}
